@@ -20,8 +20,20 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/vts-terminal/intro">
+            VTS Terminal
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/psd-layer-animation/intro"
+            style={{marginLeft: '1rem'}}>
+            PSD Layer Animation
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/live2d-physics/intro"
+            style={{marginLeft: '1rem'}}>
+            Live2D Physics
           </Link>
         </div>
       </div>
@@ -33,8 +45,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Documentation for VTuber animation tools: VTS Terminal, PSD Layer Animation, and Live2D Physics Composer">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
